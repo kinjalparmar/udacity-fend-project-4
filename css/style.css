@@ -1,0 +1,302 @@
+body,
+div,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.container-fluid {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.clear-fix {
+    overflow: auto;
+}
+
+.education-entry,
+.work-entry,
+.project-entry {
+    padding: 0 5%;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 40px;
+    color: #f5a623;
+    line-height: 48px;
+    display: inline;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 24px;
+    color: #999;
+    line-height: 29px;
+    padding: 10px;
+}
+
+h3 {
+    font-style: italic;
+    font-size: 20px;
+    color: #000;
+    line-height: 22px;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 14px;
+    color: #4a4a4a;
+    line-height: 17px;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    padding: 10px 5%;
+}
+
+.date-text {
+    font-style: italic;
+    font-size: 16px;
+    color: #999;
+    line-height: 16px;
+}
+
+.location-text {
+    font-style: italic;
+    font-size: 16px;
+    color: #999;
+    line-height: 16px;
+    float: right;
+}
+
+/*navbar */
+.navbar {
+    border-radius: 0 !important;
+    margin-bottom: 0 !important;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.nav-element:hover {
+    background-color: #f5ae23 !important;
+    color: white !important;
+}
+
+.navbar-collapse {
+    color: white;
+}
+
+.navbar-brand {
+    font-size: 50px !important;
+    color: #f5ae23 !important;
+    margin-bottom: 5px;
+}
+
+.icon-bar {
+    font-size: 10px;
+}
+
+p {
+    font-size: 14px;
+    color: #333;
+    line-height: 21px;
+}
+
+a {
+    color: #1199c3;
+    text-decoration: none;
+    margin-top: 10px;
+    display: block;
+}
+
+.welcome-message {
+    font-style: italic;
+    font-size: 18px;
+    color: #f3f3f3;
+    line-height: 28px;
+    margin-left: 10px;
+}
+
+#skills-h3 {
+    color: #f5ae23;
+    display: none;
+}
+
+.orange {
+    background-color: #f5ae23;
+}
+
+.orange-text {
+    color: #f5ae23;
+}
+
+.white-text {
+    font-weight: bold;
+    color: #fff;
+}
+
+.grey-text {
+    color: #a8a8a8;
+}
+
+.gray {
+    background-color: #f3f3f3;
+    padding-bottom: 10px;
+    clear: both;
+}
+
+.dark-gray {
+    background-color: #4a4a4a;
+}
+
+.project-image {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.justify-text {
+    text-align: justify;
+}
+/* TODO: Replace with image later */
+#header {
+    background-color: #484848;
+}
+
+.flex-box {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.title {
+    font-size: 18px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 10px;
+}
+
+.center-content {
+    padding: 2.5% 5%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.biopic {
+    float: left;
+    padding: 10px;
+    width: 200px;
+    display: none;
+}
+
+img {
+    padding: 10px;
+}
+
+span {
+    padding: 5px;
+}
+
+#lets-connect {
+    text-align: center;
+}
+
+/* CSS for social media icons - brandico */
+[class*="brandico-"]:before {
+    font-family: "brandico", sans-serif;
+}
+
+.social-icon {
+    letter-spacing: 5px;
+    font-size: 25px;
+}
+
+.icon-color-twitter {
+    color: #00aced;
+}
+
+.icon-color-fb {
+    color: #3b5998;
+}
+
+.icon-color-gplus {
+    color: #d34836;
+}
+
+.icon-color-gitHub {
+    color: #d3d3d3;
+}
+
+.icon-hover:hover {
+    color: white;
+    font-size: 27px;
+}
+
+/* Media queries to handle various device widths */
+
+@media only screen and (max-width: 1024px) {
+    #lets-connect {
+        margin-top: 5%;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .biopic {
+        width: 175px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    #lets-connect {
+        margin-top: 10%;
+    }
+
+    .biopic {
+        width: 150px;
+    }
+
+    .welcome-message {
+        display: none;
+    }
+}
+
+#map {
+    display: block;
+    height: 100%;
+    margin: 0 5%;
+}
+
+#mapDiv {
+    height: 400px;
+    width: 100%;
+    padding-bottom: 5%;
+}
+
+@media only screen and (min-width: 750px) {
+    #skills-h3,
+	.biopic {
+        display: block;
+    }
+}
