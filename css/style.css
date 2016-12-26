@@ -105,10 +105,6 @@ h5 {
     margin-bottom: 5px;
 }
 
-.icon-bar {
-    font-size: 10px;
-}
-
 p {
     font-size: 14px;
     color: #333;
@@ -217,41 +213,6 @@ img {
 
 span {
     padding: 5px;
-}
-
-#lets-connect {
-    text-align: center;
-}
-
-/* CSS for social media icons - brandico */
-[class*="brandico-"]:before {
-    font-family: "brandico", sans-serif;
-}
-
-.social-icon {
-    letter-spacing: 5px;
-    font-size: 25px;
-}
-
-.icon-color-twitter {
-    color: #00aced;
-}
-
-.icon-color-fb {
-    color: #3b5998;
-}
-
-.icon-color-gplus {
-    color: #d34836;
-}
-
-.icon-color-gitHub {
-    color: #d3d3d3;
-}
-
-.icon-hover:hover {
-    color: white;
-    font-size: 27px;
 }
 
 /* Media queries to handle various device widths */
