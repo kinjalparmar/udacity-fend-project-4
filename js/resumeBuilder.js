@@ -30,8 +30,8 @@ bio.display = function() {
     var formattedHTMLgithub = HTMLgithub.replace(data, bio.contacts.github);
     var formattedHTMLlocation = HTMLlocation.replace(data, bio.contacts.location);
     $("#topContacts").append(formattedHTMLmobile, formattedHTMLemail, formattedHTMLtwitter, formattedHTMLgithub, formattedHTMLlocation);
-	// adding contact details to footer
-	$("#footerContacts").append(formattedHTMLmobile, formattedHTMLemail, formattedHTMLtwitter, formattedHTMLgithub, formattedHTMLlocation);
+    // adding contact details to footer
+    $("#footerContacts").append(formattedHTMLmobile, formattedHTMLemail, formattedHTMLtwitter, formattedHTMLgithub, formattedHTMLlocation);
     if (bio.skills.length > 0) {
         var formattedSkills;
         var skill;
@@ -85,8 +85,8 @@ work.display = function() {
         //$("#workExperience").append(formateTitle);
         formattedEmployerTitle = formattedEmployer + formattedTitle;
         $(".work-entry:last").append(formattedEmployerTitle);
-		formattedworkLocation = HTMLworkLocation.replace(data, work.jobs[job].location);
-		$(".work-entry:last").append(formattedworkLocation);
+        formattedworkLocation = HTMLworkLocation.replace(data, work.jobs[job].location);
+        $(".work-entry:last").append(formattedworkLocation);
         formattedworkDates = HTMLworkDates.replace(data, work.jobs[job].dates);
         $(".work-entry:last").append(formattedworkDates);
         formattedworkDescription = HTMLworkDescription.replace(data, work.jobs[job].description);
@@ -184,19 +184,19 @@ education.display = function() {
     var formattedSchool;
     var formattedDatesOnline;
     var educationOnline;
-	var major;
+    var major;
     for (i = 0; i < education.schools.length; i++) {
         $("#education").append(HTMLschoolStart);
         formattedSchoolName = HTMLschoolName.replace(data, education.schools[i].name);
         formattedNameLink = formattedSchoolName.replace("#", education.schools[i].url);
-		$(".education-entry:last").append(formattedNameLink);
+        $(".education-entry:last").append(formattedNameLink);
         formattedDegree = HTMLschoolDegree.replace(data, education.schools[i].degree);
-		$(".education-entry:last").append(formattedDegree);
+        $(".education-entry:last").append(formattedDegree);
         formattedSchoolDates = HTMLschoolDates.replace(data, education.schools[i].dates);
-		$(".education-entry:last").append(formattedSchoolDates);
+        $(".education-entry:last").append(formattedSchoolDates);
         formattedSchoolLocation = HTMLschoolLocation.replace(data, education.schools[i].location);
         $(".education-entry:last").append(formattedSchoolLocation);
-		if (education.schools[i].majors.length > 0) {
+        if (education.schools[i].majors.length > 0) {
             for (major = 0; major < education.schools[i].majors.length; major++) {
                 formattedSchoolMajor = HTMLschoolMajor.replace(data, education.schools[i].majors[major]);
                 $(".education-entry:last").append(formattedSchoolMajor);
